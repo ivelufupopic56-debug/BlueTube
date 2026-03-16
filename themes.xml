@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.BlueTube" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/nav_bar</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent_soft</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+        <item name="android:colorBackground">@color/bg_dark</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/nav_bar</item>
+        <item name="android:navigationBarColor">@color/nav_bar</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <!-- Ripple tinted to accent -->
+        <item name="colorControlHighlight">#334D8EFF</item>
+        <item name="rippleColor">@color/accent_soft</item>
+    </style>
+
+    <!-- Splash / launch theme (instant display before content) -->
+    <style name="Theme.BlueTube.Splash" parent="Theme.BlueTube">
+        <item name="android:windowBackground">@color/bg_dark</item>
+    </style>
+
+</resources>

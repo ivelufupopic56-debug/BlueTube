@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ── Warm Blue Palette ── -->
+
+    <!-- Deep navy background -->
+    <color name="bg_dark">#060D1F</color>
+
+    <!-- Top / bottom navigation bar surface -->
+    <color name="nav_bar">#0B1739</color>
+
+    <!-- Card / sheet surface -->
+    <color name="surface">#112056</color>
+
+    <!-- Primary action blue (warm cobalt) -->
+    <color name="primary">#1A56DB</color>
+
+    <!-- Accent / highlight (electric warm blue) -->
+    <color name="accent">#4D8EFF</color>
+
+    <!-- Softer accent for secondary elements -->
+    <color name="accent_soft">#2C6FEF</color>
+
+    <!-- Icon tint (muted blue-white) -->
+    <color name="icon_normal">#8AABDD</color>
+
+    <!-- Primary text -->
+    <color name="text_primary">#E6EEFF</color>
+
+    <!-- Secondary text -->
+    <color name="text_secondary">#6B8EC4</color>
+
+    <!-- Divider line -->
+    <color name="divider">#1D2E5A</color>
+
+    <!-- Required by MaterialComponents theme -->
+    <color name="purple_200">#1A56DB</color>
+    <color name="purple_500">#1A56DB</color>
+    <color name="purple_700">#0B1739</color>
+    <color name="teal_200">#4D8EFF</color>
+    <color name="teal_700">#2C6FEF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

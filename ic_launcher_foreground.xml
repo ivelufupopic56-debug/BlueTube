@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- White play arrow, centred in the 108×108 adaptive safe zone -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M38,28l44,26 -44,26z" />
+</vector>

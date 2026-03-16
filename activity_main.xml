@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <!-- ═══════════════ TOP BAR ═══════════════ -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/nav_bar"
+        android:elevation="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Logo / title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textColor="@color/accent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.04"
+            android:singleLine="true"
+            android:ellipsize="end" />
+
+        <!-- Home button -->
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/home"
+            android:src="@drawable/ic_home"
+            android:padding="8dp"
+            app:tint="@color/icon_normal" />
+
+        <!-- Refresh button -->
+        <ImageButton
+            android:id="@+id/btnRefresh"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/refresh"
+            android:src="@drawable/ic_refresh"
+            android:padding="8dp"
+            app:tint="@color/icon_normal" />
+
+    </LinearLayout>
+
+    <!-- ═══════════════ PROGRESS BAR ═══════════════ -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@color/accent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
+
+    <!-- ═══════════════ WEB VIEW ═══════════════ -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/bg_dark"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <!-- ═══════════════ BOTTOM NAV BAR ═══════════════ -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/nav_bar"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Back -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="14dp"
+            app:tint="@color/icon_normal" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="@color/divider" />
+
+        <!-- Forward -->
+        <ImageButton
+            android:id="@+id/btnForward"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/forward"
+            android:src="@drawable/ic_arrow_forward"
+            android:padding="14dp"
+            app:tint="@color/icon_normal" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="@color/divider" />
+
+        <!-- PiP Button -->
+        <ImageButton
+            android:id="@+id/btnPip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/pip"
+            android:src="@drawable/ic_pip"
+            android:padding="14dp"
+            app:tint="@color/accent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
